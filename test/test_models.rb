@@ -16,7 +16,7 @@ end
 
 class UserWithCustomHashing < User
   protected
-  def password_digest(password)
+  def db_password_digest(password)
     password.reverse
   end
 end
